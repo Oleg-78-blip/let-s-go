@@ -1,12 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 article,
@@ -43,9 +44,10 @@ template {
 }
 
 a {
+    text-decoration: none;
     background-color: transparent;
     cursor: pointer;
-    text-decoration: none;
+    color: inherit;
 }
 
 a:active,

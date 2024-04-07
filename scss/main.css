@@ -1,6 +1,115 @@
-header {
-  font-size: 14px;
+body {
+  font-family: "Roboto", sans-serif;
+  color: #34383D;
+  font-style: normal;
+  font-weight: 400;
 }
-header h1 {
-  font-size: 30px;
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 241px 0 184px;
+  border: 1px solid;
+}
+.header__menu li:first-child {
+  color: #D7FFC2;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.header__menu li:nth-child(2) {
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.banner__bg .banner__title {
+  padding-left: 331px;
+}
+.banner__bg .banner__title h1 {
+  padding-top: 340px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 80px;
+  font-style: normal;
+  line-height: 88px;
+  color: #FFFEF0;
+}
+.banner__bg .banner__title h2 {
+  color: #FFAC7F;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 88px;
+  margin-bottom: 24px;
+}
+.banner__bg .banner__title p,
+.banner__bg .banner__title span {
+  color: #FFFEF0;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.banner__bg .banner__title span {
+  display: block;
+  margin-bottom: 24px;
+}
+.banner__bg .banner__title .button-link {
+  display: inline-block;
+  position: relative;
+  color: #004449;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  padding: 16px 66px 16px 34px;
+  margin-bottom: 400px;
+  border-radius: 50px;
+  background: #0BFF80;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.banner__bg .banner__title .button-link svg {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 270px;
+}
+.banner__bg .banner__brands {
+  text-align: center;
+}
+.banner__bg .banner__brands h3 {
+  color: #FFFEF0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+.banner__bg .banner__brands .banner__block-img {
+  max-width: 1124px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

@@ -1,14 +1,13 @@
-$myFont-1: "Roboto", sans-serif;
-$myFont-2: "Montserrat", sans-serif;
-$colorTextLight: #FFF;
-$colorTextDark: #34383D;
-$colorLinc-1: #CDA861;
-$myFontSize: 18px;
-$myWidth: 680px;
+// $myFont-1: "Roboto", sans-serif;
+// $myFont-2: "Montserrat", sans-serif;
+// $colorTextLight: #FFF;
+// $colorTextDark: #34383D;
+// $colorLinc-1: #CDA861;
+// $myFontSize: 18px;
+// $myWidth: 680px;
 
 body {
     font-family: "Roboto", sans-serif;
-    // font-family: "Montserrat", sans-serif;
     color: $colorTextDark;
     font-style: normal;
     font-weight: 400;
@@ -112,27 +111,48 @@ header {
             }
         }
     }
+}
 
-    .banner__brands {
+.banner__brands {
+    text-align: center;
+
+    h3 {
+        color: #FFFEF0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        margin-bottom: 48px;
+    }
+
+    .banner__block-img {
+        max-width: 1124px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 150px;
+    }
+}
+
+
+
+
+.info__card {
+    text-align: center;
+    display: flex;
+    background-color: #FFAC7F;
+
+    h4 {
+        color: #004449;
+
         text-align: center;
-
-        h3 {
-            color: #FFFEF0;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 24px;
-                letter-spacing: 1.8px;
-                text-transform: uppercase;
-                margin-bottom: 48px;
-        }
-
-        .banner__block-img {
-            max-width: 1124px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 0 10px;
-            display: flex;
-            justify-content: space-between;
-        }
+        font-family: Roboto;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
     }
 }

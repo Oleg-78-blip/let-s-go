@@ -10,61 +10,95 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,100..1000&family=Montserrat&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="scss/animate.css">
-    <link rel="stylesheet" href="./scss/normalise.css">
-    <link rel="stylesheet" href="./scss/main.css">
+        <!-- <link rel="stylesheet" href="scss/animate.css"> -->
+        <link rel="stylesheet" href="./scss/normalise.css">
+        <link rel="stylesheet" href="./scss/main.scss">
+        <link rel="stylesheet" href="./scss/main.css">
 </head>
 
-<body>
-        <header class="header">
-            <div class="container">
-                <nav class="header__nav">
-                    <ul class="header__menu">
-                        <li><a href="">Formerly Scott's Cheap Flights</a></li>
-                        <li><a href="">Login</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<body style="width: 1200px; margin: 0 auto;">
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="">Formerly Scott's Cheap Flights</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <main>
-            <article>
-                <section class="banner">
-                    <div class="container">
-                        <div class="banner__bg" style="background: url(./images/banner-bg.png);">
-                            <div class="banner__title">
-                                <h1 class="wow fadeInLeftBig">Less overpaying.</h1>
-                                <h2 class="wow fadeInRightBig">More traveling.</h2>
-                                <p>Meet the travel membership that</p>
-                                <span>saves you hundreds on flights.</span>
-                                <a href="#" class="button-link">get free flight alerts
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4 12H20" stroke="black" stroke-width="2" stroke-linecap="square" />
-                                        <path d="M20 12C15.5817 12 12 8.41828 12 4" stroke="black" stroke-width="2" stroke-linecap="square" />
-                                        <path d="M20 12C15.5817 12 12 15.5817 12 20" stroke="black" stroke-width="2" stroke-linecap="square" />
-                                    </svg>
-                                </a>
+    <main>
+        <article>
+            <section class="banner">
+                <div class="container">
+                    <div class="banner__bg" style="background: url(./images/banner-bg.png);">
+                        <div class="banner__title">
+                            <h1 class="wow fadeInLeftBig">Less overpaying.</h1>
+                            <h2 class="wow fadeInRightBig">More traveling.</h2>
+                            <p>Meet the travel membership that</p>
+                            <span>saves you hundreds on flights.</span>
+                            <a href="#" class="button-link">get free flight alerts
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 12H20" stroke="black" stroke-width="2" stroke-linecap="square" />
+                                    <path d="M20 12C15.5817 12 12 8.41828 12 4" stroke="black" stroke-width="2"
+                                        stroke-linecap="square" />
+                                    <path d="M20 12C15.5817 12 12 15.5817 12 20" stroke="black" stroke-width="2"
+                                        stroke-linecap="square" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="banner__brands">
+                            <h3>as seen in</h3>
+                            <div class="banner__block-img">
+                                <img src="./svg/brandname-1.svg" alt="brand name">
+                                <img src="./svg/brandname-2.svg" alt="brand name">
+                                <img src="./svg/brandname-3.svg" alt="brand name">
+                                <img src="./svg/brandname-4.svg" alt="brand name">
+                                <img src="./svg/brandname-5.svg" alt="brand name">
                             </div>
-                                <div class="banner__brands">
-                                    <h3>as seen in</h3>
-                                    <div class="banner__block-img">
-                                        <img src="./svg/brandname-1.svg" alt="brand name">
-                                        <img src="./svg/brandname-2.svg" alt="brand name">
-                                        <img src="./svg/brandname-3.svg" alt="brand name">
-                                        <img src="./svg/brandname-4.svg" alt="brand name">
-                                        <img src="./svg/brandname-5.svg" alt="brand name">
-                                    </div>
-                                </div>
-                        
+                        </div>
                     </div>
-                </section>
-            </article>
-        </main>
+            </section>
 
-<script src="./js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
+            <section class="info" style="background: url(./images/info-bg.png);">
+                <div class="container">
+                    <h2>How Going Works</h2>
+                    <div class="info__card">
+                        <div>
+                            <img src="./images/airplane.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Start with your airport.</h4>
+                                <p class="card-text">SChoose US departure airports like your biggest airport,
+                                    closest airport, and maybe even your parent’s.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/airplane.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Start with your airport.</h4>
+                                <p class="card-text">SChoose US departure airports like your biggest airport,
+                                    closest airport, and maybe even your parent’s.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/airplane.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Start with your airport.</h4>
+                                <p class="card-text">SChoose US departure airports like your biggest airport,
+                                    closest airport, and maybe even your parent’s.</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="./js/main.js"></script>
 </body>
 

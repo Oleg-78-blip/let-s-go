@@ -1,60 +1,25 @@
-const galleryContainer = document.querySelector('.gallry-container');
-const galleryControlsContainer = document.querySelector('.gallry-controls');
-const galleryControls = ['previous', 'next'];
-const galleryItems = document.querySelectorAll('.gallery-item');
+var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 7,
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  loop:true,
+   navigation: {
+      nextEl: '.next',
+      prevEl: '.prev'
+    },
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 70,
+    modifier: 2.5,
+    slideShadows: "boolean",
+  },
+//   autoplay:{
 
-class Carousel {
+//     delay:3000,
+//     disableOnInteraction:false,
+//   }
 
-    constructor(container, items, controls){
-        this.carouselContainer = container;
-        this.carouselControls = controls;
-        this.carouselArray = [...items];
-
-    }
-
-    updateGallery(){
-        this.carouselArray.forEach(el => {
-            el.classList.remove('gallery-item-1');
-            el.classList.remove('gallery-item-2');
-            el.classList.remove('gallery-item-3');
-            el.classList.remove('gallery-item-4');
-            el.classList.remove('gallery-item-5');
-        });
-
-        this.carouselArray.slice(0.5).forEach((el, i) => {
-            el.classList.add('gallery-item-${i+1}');
-        })
-    }
-
-    setCurentState(direction){
-        if (direction.className == 'gallery-controls-previous'){
-            this.carouselArray.unshift(this.carouselArray.pop());
-        }else{
-            this.carouselArray.push(this.carouselArray.shift());
-        }
-        this.updateGallery();
-    }
-
-     setControls() {
-        this.carouselControls.forEach(control => {
-            galleryControlsContainer.appendChild(document.createElement('button')).className = 'gallery-controls-${control}';
-            document.querySelector('.gallery-controls-${control}').innerText = control;
-        });
-     }   
-     
-     useControls(){
-        const triggers = [...galleryControlsContainer.childNodes];
-        triggers.forEach(control => {
-            control.addEventListener('click', e => {
-            e.preventDefault();
-            this.setCurentState(control);
-            }); 
-        });
-     }
-}
-
-const exampleCar = new Carousel(galleryContainer, galleryItems, galleryControls);
-
-exampleCarousel.setControls();
-exampleCarousel.useControls();
-     
+});

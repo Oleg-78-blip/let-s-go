@@ -155,6 +155,10 @@ button {
     overflow: visible;
 }
 
+.btn {
+    background-color: transparent;
+}
+
 button,
 select {
     text-transform: none;

@@ -1,13 +1,13 @@
-var swiper = new Swiper(".mySwiper", {
-     slidesPerView: 7,
+let swiper = new Swiper(".mySwiper", {
+  slidesPerView: 7,
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  loop:true,
-   navigation: {
-      nextEl: '.next',
-      prevEl: '.prev'
-    },
+  loop: true,
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
   slidesPerView: "auto",
   coverflowEffect: {
     rotate: 0,
@@ -16,10 +16,13 @@ var swiper = new Swiper(".mySwiper", {
     modifier: 2.5,
     slideShadows: "boolean",
   },
-//   autoplay:{
+});
 
-//     delay:3000,
-//     disableOnInteraction:false,
-//   }
+// slick slider
 
+$(".single-item").slick({
+  centerMode: true,
+  slidesToShow: 3,
+  prevArrow: $(".s-prev"),
+  nextArrow: $(".s-next"),
 });

@@ -50,6 +50,10 @@ a {
     color: inherit;
 }
 
+span {
+    display: block;
+}
+
 a:active,
 a:hover {
     outline: 0;

@@ -1,3 +1,6 @@
+
+// @import 'media.scss';
+
 $myFont-1: "Roboto", sans-serif;
 $myFont-2: "Montserrat", sans-serif;
 $colorBgLight: #FFFEF0;
@@ -6,24 +9,6 @@ $colorLinc-1: #CDA861;
 $myFontSize: 18px;
 $myWidth: 680px;
 
-// @mixin media-1000 {
-//     @media (max-width: 1000px) {
-//         @content;
-//     }
-// }
-
-// @mixin media-800 {
-//     @media (max-width: 800px) {
-//         @content;
-//     }
-// }
-
-// @mixin media-576 {
-//     @media (max-width: 576px) {
-//         @content;
-//     }
-// }
-
 
 body {
     font-family: $myFont-1;
@@ -31,6 +16,7 @@ body {
     font-style: normal;
     font-weight: 400;
     color: $colorTextDark;
+    color: #FFFEF0;
 }
 
 .container {
@@ -50,7 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 44px 241px 0 184px;
-    border: 1px solid;
+
 
     li:first-child {
         color: #D7FFC2;
@@ -73,14 +59,13 @@ header {
 .banner__bg {
 
     .banner__title {
-        padding-left: 331px;
 
-        // @include media-1000 {
-        //     padding-inline: 10px;
-        //     text-align: center;
-        // }
-
-
+        padding-left: 320px;
+        
+        @media screen and (max-width: 1000px) {
+            padding: 0 20px;
+            text-align: center;
+        }
 
         h1 {
             padding-top: 340px;
@@ -89,7 +74,6 @@ header {
             font-size: 80px;
             font-style: normal;
             line-height: 88px;
-            color: #FFFEF0;
         }
 
     }
@@ -100,10 +84,6 @@ header {
         font-size: 80px;
         line-height: 88px;
         margin-bottom: 24px;
-
-        @include media-576 {
-            font-size: 50px;
-        }
     }
 
     p,
@@ -113,9 +93,6 @@ header {
         font-weight: 400;
         line-height: 48px;
 
-        @include media-576 {
-            font-size: 25px;
-        }
     }
 
     span {
@@ -141,10 +118,6 @@ header {
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
-
-        @include media-576 {
-            margin-bottom: 200px;
-        }
 
         &:hover {
             background-color: #1de27c;
@@ -183,16 +156,6 @@ header {
         display: flex;
         justify-content: space-between;
         padding-bottom: 150px;
-
-
-        @include media-576 {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-
-        }
-    }
 }
 
 .info {
@@ -652,18 +615,5 @@ header {
         border: 2px solid;
         color: #483CFF;
     }
-    ul {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-        border: 2px solid;
-        color: #483CFF;
-    }
-    ul {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-        border: 2px solid;
-        color: #483CFF;
-    }
+}
 }
